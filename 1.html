@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style\style.css">
+</head>
+
+<body>
+    <center>
+        <h1>
+            Rock Paper Scissors
+        </h1>
+            <button onclick="
+            userMove='Rock';
+            generateComputerMove()
+            generateResult(userMove,computerMove);
+            console.log('result is '+result);
+            console.log(game);
+            rendomsummery();
+            ">
+            <img src="images\rock.png" alt="rock" width="100px" height="100px">
+            </button>
+            <button onclick="
+            userMove='Paper';
+            generateComputerMove()
+            generateResult(userMove,computerMove);
+            console.log('result is '+result);
+            console.log(game);
+            rendomsummery();
+            ">
+            <img src="images\paper.png" alt="paper"width="100px" height="100px">
+            </button>
+            <button onclick="
+            userMove='scissors';
+            generateComputerMove()
+            generateResult(userMove,computerMove);
+            console.log('result is '+result);
+            console.log(game);
+            rendomsummery();
+            ">
+            <img src="images\scissors.png" alt="scissors"width="100px" height="100px">
+            </button>
+            <button onclick="
+            resetcli();">
+            <img id="reset-bin-img" src="images\reset.jpg" alt="reset">
+            </button>
+            <h1 id="h11">Game Summary</h1>
+            <table>
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Ties</th>
+                    <th>Games Played</th>
+                </tr>
+                <tr>
+                    <td id="wins">0</td>
+                    <td id="losses">0</td>
+                    <td id="ties">0</td>
+                    <td id="result">0</td>
+                </tr>
+            </table>
+            <h1>Game History</h1>
+            <table id="histroytable">
+                <tr>
+                    <th>User Move</th>
+                    <th>Computer Move</th>
+                    <th>Result</th>
+                </tr>
+                
+            </table>
+    </center>
+    <script src="script\1.js"></script>
+</body>
+</html>
